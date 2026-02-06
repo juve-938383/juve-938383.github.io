@@ -665,7 +665,7 @@ transform: scale(1.4);
 	}
 
 	.info-content::-webkit-scrollbar{
-		width: 7vw;
+		width: 1.66vw;
 		height: 100vw;
 		
 	}
