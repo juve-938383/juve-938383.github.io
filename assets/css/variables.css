@@ -1,0 +1,19 @@
+:root{
+	--cpp-color: #3949aa;
+	--c-color: #659ad2;
+	--csharp-color: #803786;
+	--python-color: #c8a337;
+	--rust-color: #c85e30;
+	--gamedev-color: #0e7b86;
+	--graphics-color: #24954b;
+	--hpc-color: #91e1e1;
+	--visualstudio-color: #6b4ca0;
+	--unity-color: #000;
+	--jetbrains-color: #eb3b7a;
+	--bevy-color: #282828;
+	--java-color: #ce2c2f;
+	--javascript-color: #cebe54;
+	--webdev-color: #4a3182;
+	--github-color: #000;
+
+}

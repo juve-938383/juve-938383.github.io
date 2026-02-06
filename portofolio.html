@@ -1,0 +1,693 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Julio Zenelaj</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/portofolio.css" />
+	<link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />      
+</head>
+
+
+<body>
+	<div id="header">
+		<h1 id="title">Julio Zenelaj</h1>
+		<div class="nav">
+			<a class="nav-link" id="cv" href="assets/pdf/CV.pdf" target="_blank">CV</a>
+			<a class="nav-link" id="home" href='index.html'>HOME</a>
+			<a class="nav-link" id="portofolio" href='portofolio.html'>PORTOFOLIO</a>
+			<a class="nav-link" id="contact" href='contact.html'>CONTACT</a>
+		</div>
+	</div>	
+	<script>
+
+		function openInfo(activate){
+			closeInfo();
+			document.getElementById("floating-windows").style.visibility = 'visible';
+			document.getElementById("dark-overlay").style.visibility = 'visible';
+			document.getElementById(activate).style.visibility = 'visible';
+		}
+
+		function closeInfo(){
+			const children = document.getElementById("floating-windows").children;
+			for(const child of children){
+				child.style.visibility = 'hidden';
+			}
+			document.getElementById("floating-windows").style.visibility = 'hidden';
+		}
+
+	</script>
+	<div id="content">
+		
+		<div id= "portofolio-container">
+			<p id="portofolio-title">Portofolio</p>
+			<div id="tiles">
+				
+				<div class="tile" style="--tile_bg: url('../images/thumbnails/MSCCLPPMPI.png'); --overlay_color: #0c1a5b;", onclick="openInfo('mscclpp-mpi-info')">
+					<div class="color-overlay"></div>
+					<p class="tile-title">MSCCLPP-MPI</p>
+				</div>
+
+				<div class="tile" style="--tile_bg: url('../images/thumbnails/DNASequencing.png'); --overlay_color: #0c1a5b;", onclick="openInfo('dna-sequencing-info')">
+					<div class="color-overlay"></div>
+					<p class="tile-title">DNA Sequencing</p>
+				</div>
+
+				<div class="tile" style="--tile_bg: url('../images/thumbnails/NodeGraph.png'); --overlay_color: #0c1a5b;", onclick="openInfo('node-editor-info')">
+					<div class="color-overlay"></div>
+					<p class="tile-title">Graph Node Editor</p>
+				</div>
+
+				<div class="tile" style="--tile_bg: url('../images/thumbnails/ReactionDiffusion.png'); --overlay_color: #0c1a5b;", onclick="openInfo('reaction-diffusion-info')">
+					<div class="color-overlay"></div>
+					<p class="tile-title">Reaction Diffusion</p>
+				</div>
+
+				<div class="tile" style="--tile_bg: url('../images/thumbnails/WFC.png'); --overlay_color: #0c1a5b;", onclick="openInfo('wfc-info')">
+					<div class="color-overlay"></div>
+					<p class="tile-title">WFC</p>
+				</div>
+
+				<div class="tile" style="--tile_bg: url('../images/thumbnails/SpiderPunk.png'); --overlay_color: #0c1a5b;", onclick="openInfo('spider-punk-info')">
+					<div class="color-overlay"></div>
+					<p class="tile-title">Spider-Punk VFX</p>
+				</div>
+
+				<div class="tile" style="--tile_bg: url('../images/thumbnails/RendeerRaytracing.png'); --overlay_color: #0c1a5b;", onclick="openInfo('rendeer-info')">
+					<div class="color-overlay"></div>
+					<p class="tile-title">Rendeer Raytracer</p>
+				</div>
+
+				<div class="tile" style="--tile_bg: url('../images/thumbnails/Spelunky.png'); --overlay_color: #0c1a5b;", onclick="openInfo('spelunky-info')">
+					<div class="color-overlay"></div>
+					<p class="tile-title">Spelunky ProcGen</p>
+				</div>
+
+				<div class="tile" style="--tile_bg: url('../images/thumbnails/FifaMobile.png'); --overlay_color: #0c1a5b;", onclick="openInfo('fifa-mobile-info')">
+					<div class="color-overlay"></div>
+					<p class="tile-title">FIFA Mobile Clone</p>
+				</div>
+
+				<div class="tile" style="--tile_bg: url('../images/thumbnails/Miscellaneous.png'); --overlay_color: #0c1a5b;", onclick="openInfo('miscellaneous-info')">
+					<div class="color-overlay"></div>
+					<p class="tile-title">Miscellaneous</p>
+				</div>
+
+
+			</div>
+		</div>
+
+		<div id="footer">
+			<div id="footer-contact-container">
+				<a class= "links-email" onclick="const ascii = [97, 101, 105, 106, 108, 110, 111, 117, 122];const idx = [3, 7, 4, 2, 6, 8, 1, 5, 1, 4, 0, 3];var res = 'mailto:';const postfix = ['@gmail.com', '@hotmail.com', '@duck.com', '@yahoo.com'];for(var i=0; i < 12; i++){res = res.concat(String.fromCharCode(ascii[idx[i]]));}res = res.concat(postfix[2]);window.open(res, '_blank')" target="_blank">
+					<img src="assets/images/icons/email.svg">
+				</a>
+				<div id="divider"></div>
+				<a class= "links-github" href="https://github.com/juve-938383" target="_blank">
+					<img src="assets/images/icons/github_square.svg">
+				</a>
+				<div id="divider"></div>
+				<a class= "links-linkedin" href="https://www.linkedin.com/in/julio-zenelaj" target="_blank">
+					<img src="assets/images/icons/linkedin.svg">
+				</a>
+			</div>
+			<p id="copyright">©Julio Zenelaj</p>
+		</div>
+
+	</div>
+
+	<div id="floating-windows" style="visibility:hidden"><!--style="visibility:hidden"-->
+		<div id="dark-overlay" onclick="closeInfo();" style="visibility:hidden">
+		</div>
+
+		<!--MSCCL-MPI-->
+		<div class="info-window" id="mscclpp-mpi-info" style="visibility:hidden">
+			<div class="info-content">
+				<div class="info-window-close"
+				onclick="closeInfo();">
+					<img style= "width: inherit; height: inherit;" src="https://img.icons8.com/?size=100&id=9433&format=png&color=000000" />
+				</div>
+				<div class="info-title">
+					<p id="info-title-text">
+						MSCCLPP-MPI
+					</p>
+				</div>
+
+				<div class="info-duration">
+					<p id="info-duration-text">
+						June 2025 - October 2025
+					</p>
+					
+				</div>
+
+				<div class="info-tags" >
+					<img style="background-color: var(--c-color);" title="C" src="assets/images/icons/c.svg">
+					<img style="background-color: var(--hpc-color);" title="HPC" src="assets/images/icons/hpc.svg">
+					<img style="background-color: var(--visualstudio-color);" title="Visual Studio" src="assets/images/icons/vs.svg">
+					<img style="background-color: var(--github-color);" title="Github" src="assets/images/icons/github.svg">
+				</div>
+
+				<div class="info-media">
+					<a href="https://github.com/juve-938383/mscclpp-mpi" target="_blank"><img src="./assets/images/media/MSCCLPPMPI.png"></a>
+
+				</div>
+
+				<div class="info-description">
+					<p>
+					<b>[Bachelor's thesis project]</b> MPI is a commonly used standard for programming collective communication algorithms in distributed computing. However, designing collective communication algorithms natively requires expertise and significant attention to implementation details, and might potentially lead to erroneous algorithms and unsafe programs. <br><br>
+					Thus, our goal was to implement a way to enable users to focus on the design of algorithms instead of implementation details. Microsoft's MSCCL++ already does that for NVIDIA's NCCL standard, so we decided to keep the same simple Python frontend and create an interpreter that runs on MPI. This project required making a modular and abstract system that can interpret any algorithm, while being efficient. It required a lot of iteration in order to simplify the implementation as much as possible and make it compact and efficient. <br><br>
+					In the end, the resulting interpreter was not only able to run any algorithm generated by MSCCL++, but we also added some optimization options for considerably better runtime. Our goal was to get to the same runtime as native OpenMPI. Often we were able to outdo it, and optimizations offer multiplicative scale speedup. But the base case still had some overhead which, in the end, we did not have enough time to find and optimize.
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!--DNA Sequencing-->
+		<div class="info-window" id="dna-sequencing-info" style="visibility:hidden">
+			<div class="info-content">
+				<div class="info-window-close"
+				onclick="closeInfo();">
+					<img style= "width: inherit; height: inherit;" src="https://img.icons8.com/?size=100&id=9433&format=png&color=000000" />
+				</div>
+				<div class="info-title">
+					<p id="info-title-text">
+						DNA Sequencing
+					</p>
+				</div>
+
+				<div class="info-duration">
+					<p id="info-duration-text">
+						February 2025 - April 2025
+					</p>
+					
+				</div>
+
+				<div class="info-tags" >
+					<img style="background-color: var(--c-color);" title="C" src="assets/images/icons/c.svg">
+					<img style="background-color: var(--hpc-color);" title="HPC" src="assets/images/icons/hpc.svg">
+					<img style="background-color: var(--visualstudio-color);" title="Visual Studio" src="assets/images/icons/vs.svg">
+					<img style="background-color: var(--github-color);" title="Github" src="assets/images/icons/github.svg">
+				</div>
+
+				<div class="info-media">
+					<a href="https://github.com/juve-938383/DNA-Sequencing" target="_blank"><img src="./assets/images/media/DNASequencing.png"></a>
+
+				</div>
+
+				<div class="info-description">
+					<p>
+					This was the project of the Multicore Programming course. Given a linear algorithm for finding DNA subsequences in a long DNA string, the task was the implementation of a multithreaded version in 3 different multicore programming models: local multithreading using OpenMPI, distributed computing using MPI, and GPU multithreading using CUDA. <br><br>
+					Through this course and this project I learned how substantial it is to think of programming in terms of data layout and organization and how important it is to take as much advantage as possible of the memory cache, and specific hardware in general, in order to achieve good efficiency. 
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!--Graph Node Editor-->
+		<div class="info-window" id="node-editor-info" style="visibility:hidden">
+			<div class="info-content">
+				<div class="info-window-close"
+				onclick="closeInfo();">
+					<img style= "width: inherit; height: inherit;" src="https://img.icons8.com/?size=100&id=9433&format=png&color=000000" />
+				</div>
+				<div class="info-title">
+					<p id="info-title-text">
+						Graph Node Editor
+					</p>
+				</div>
+
+				<div class="info-duration">
+					<p id="info-duration-text">
+						June 2024
+					</p>
+					
+				</div>
+
+				<div class="info-tags" >
+					<img style="background-color: var(--csharp-color);" title="C#" src="assets/images/icons/csharp.svg">
+					<img style="background-color: var(--visualstudio-color);" title="Visual Studio" src="assets/images/icons/vs.svg">
+					<img style="background-color: var(--unity-color);" title="Unity" src="assets/images/icons/unity.svg">
+				</div>
+
+				<div class="info-media">
+					<iframe src="https://www.youtube.com/embed/mwZafAgZUBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+				</div>
+
+				<div class="info-description">
+					<p>
+					This project was implemented in one week as part of a test for a job application. The goal of this task was the creation of a graph node editor tool using Unity's UI Toolkit. The types of nodes are: Single Node, which has a text input field and one output and Binary Node which has two outputs. There is one root node(denoted with a star in the video). Nodes can be moved around but holding a button should move all nodes directly connected to the given node. Nodes can be added and deleted. In addition, the layout of a graph should be saved to and loaded from a JSON file.<br><br>
+
+                    The challenge of this task relied in making use of Unity's UI Toolkit, which was relatively new at the time, and using its API to fulfill the task. It is a decievingly complicated task as it requires the interaction of many elements which might not be obvious at first, however the result functions well and offers an appealing UI. In hindsight, as I was too used to OOP and Unity's programming mindset, there was more coupling of elements than necessary as connection data was held on the nodes but a global tree representation would have probably been a better and simpler approach.
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!--Reaction Diffusion-->
+		<div class="info-window" id="reaction-diffusion-info" style="visibility:hidden">
+			<div class="info-content">
+				<div class="info-window-close"
+				onclick="closeInfo();">
+					<img style= "width: inherit; height: inherit;" src="https://img.icons8.com/?size=100&id=9433&format=png&color=000000" />
+				</div>
+				<div class="info-title">
+					<p id="info-title-text">
+						Reaction Diffusion
+					</p>
+				</div>
+				<div class="info-duration">
+					<p id="info-duration-text">
+						November 2023
+					</p>
+					
+				</div>
+
+				<div class="info-tags" >
+					<img style="background-color: var(--cpp-color);" title="C++" src="assets/images/icons/cpp.svg">
+				
+					<img style="background-color: var(--visualstudio-color);" title="Visual Studio" src="assets/images/icons/vs.svg">
+				</div>
+
+				<div class="info-media" style="display:flex; flex-direction: row; gap: 10px;">
+					<iframe class="rd-media" src="https://www.youtube.com/embed/4y_PcogJgPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+					<iframe class="rd-media" src="https://www.youtube.com/embed/3clO9z1hsU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+				</div>
+
+				<div class="info-description">
+					<p>
+					Reaction Diffusion is the simulation of the process of diffusion, which in nature can be found in many forms such as heat diffusion, pressure diffusion, chemical components diffusion etc. This implementation is a shader that simulates the Diffusion Equations. The goal of this simulation is the procedural generation of organic-looking patterns.<br>
+					Further reading on the algorithm: <a href="http://karlsims.com/rd.html">http://karlsims.com/rd.html</a>
+
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!--WFC-->
+		<div class="info-window" id="wfc-info" style="visibility:hidden">
+			<div class="info-content">
+				<div class="info-window-close"
+				onclick="closeInfo();">
+					<img style= "width: inherit; height: inherit;" src="https://img.icons8.com/?size=100&id=9433&format=png&color=000000" />
+				</div>
+				<div class="info-title">
+					<p id="info-title-text">
+						Wave Function Collapse
+					</p>
+				</div>
+				<div class="info-duration">
+					<p id="info-duration-text">
+						October 2023 - November 2023
+					</p>
+					
+				</div>
+
+				<div class="info-tags" >
+					<img style="background-color: var(--rust-color);" title="Rust" src="assets/images/icons/rust.svg">
+					<img style="background-color: var(--gamedev-color);" title="Game Development" src="assets/images/icons/gamedev.svg">
+					<img style="background-color: var(--jetbrains-color);" title="Jet Brains" src="assets/images/icons/jetbrains.svg">
+					<img style="background-color: var(--bevy-color);" title="Bevy" src="assets/images/icons/bevy.svg">
+
+				</div>
+
+				<div class="info-media">
+					<iframe src="https://www.youtube-nocookie.com/embed/HuzOiQUfrUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+				</div>
+
+				<div class="info-description">
+					<p>
+					This project was a challenge on 3 different levels: new programming language, new game engine, new algorithm. After hearing a lot of buzz about it, I decided to learn Rust. I used the official book and once I was done with the basics, I decided to try making a real program in it. <br>
+					At the time, the Wave Function Collapse algorithm had caught my attention as a method for procedurally making interesting and dynamic content (in this case, map generation). <br>
+					Finally, Bevy is the most popular Rust game engine and it uses an ECS system, which is a data-driven design approach to game development. <br><br>
+					As a result of all these factors, implementing WFC in Bevy turned out to be very interesting, and I especially enjoyed the ECS approach to programming, even though at the time I attributed this new programming mentality to Rust. I did find Rust's forced styling bothersome but now I appreciate this design is a result of their focus on programming safety.
+
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!--Spider-Punk VFX-->
+		<div class="info-window" id="spider-punk-info" style="visibility:hidden">
+			<div class="info-content">
+				<div class="info-window-close"
+				onclick="closeInfo();">
+					<img style= "width: inherit; height: inherit;" src="https://img.icons8.com/?size=100&id=9433&format=png&color=000000" />
+				</div>
+				<div class="info-title">
+					<p id="info-title-text">
+						Spider-Punk VFX
+					</p>
+				</div>
+				<div class="info-duration">
+					<p id="info-duration-text">
+						August 2023 - September 2023
+					</p>
+					
+				</div>
+
+				<div class="info-tags" >
+					<img style="background-color: var(--csharp-color);" title="C#" src="assets/images/icons/csharp.svg">
+					<img style="background-color: var(--graphics-color);" title="Graphics" src="assets/images/icons/graphics.svg">
+
+					<img style="background-color: var(--visualstudio-color);" title="Visual Studio" src="assets/images/icons/vs.svg">
+
+					<img style="background-color: var(--unity-color);" title="Unity" src="assets/images/icons/unity.svg">
+				</div>
+
+				<div class="info-media">
+					<iframe src="https://www.youtube.com/embed/9573yr9Szf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+				</div>
+
+				<div class="info-description">
+					<p>
+					In this project I tried to replicate some of the stylized rendering effects of the Spider-Punk character from the animated motion picture "Spider-Man: Across the Spider-Verse", using the Unity engine. The artistic effects present in this movie, as well as its predecessor have me in awe every time I watch them, which is why I tried to emulate one of them in order to try to understand better how it is achieved. <br><br>
+					At the time I was not aware of how stylized rendering works so this project helped me learn about the rendering pipeline and how to create custom rendering effects/passes along this pipeline. It was both a technical and artistic challenge which made me appreaciate even more the work that goes into making these high quality animated movies.
+
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!--Rendeer Raytracing-->
+		<div class="info-window" id="rendeer-info" style="visibility:hidden">
+			<div class="info-content">
+				<div class="info-window-close"
+				onclick="closeInfo();">
+					<img style= "width: inherit; height: inherit;" src="https://img.icons8.com/?size=100&id=9433&format=png&color=000000" />
+				</div>
+				<div class="info-title">
+					<p id="info-title-text">
+						Rendeer Raytracing
+					</p>
+				</div>
+				<div class="info-duration">
+					<p id="info-duration-text">
+						July 2023
+					</p>
+					
+				</div>
+
+				<div class="info-tags" >
+					<img style="background-color: var(--cpp-color);" title="C++" src="assets/images/icons/cpp.svg">
+					<img style="background-color: var(--graphics-color);" title="Graphics" src="assets/images/icons/graphics.svg">
+
+					<img style="background-color: var(--visualstudio-color);" title="Visual Studio" src="assets/images/icons/vs.svg">
+					<img style="background-color: var(--github-color);" title="Github" src="assets/images/icons/github.svg">
+				</div>
+
+				<div class="info-media">
+					<a href="https://github.com/juve-938383/Rendeer-RayTracing" target="_blank"><img src="./assets/images/media/RendeerRaytracing.png"></a>
+
+				</div>
+
+				<div class="info-description">
+					<p>
+					A ray tracer made in C++ following the Cherno's <a href="https://youtube.com/playlist?list=PLlrATfBNZ98edc5GshdBtREv5asFW3yXl" target="_blank">RayTracing tutorial series</a>. Features: sphere rendering, emissive materials, diffuse and specular reflections. <br> 
+					This project was an introduction to basic ray tracing techniques such as primitive generation, materials, reflections. Unfortunately, the series did not go on so this project was prematurely abandoned.
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!--Spelunky Procedural Generation-->
+		<div class="info-window" id="spelunky-info" style="visibility:hidden">
+			<div class="info-content">
+				<div class="info-window-close"
+				onclick="closeInfo();">
+					<img style= "width: inherit; height: inherit;" src="https://img.icons8.com/?size=100&id=9433&format=png&color=000000" />
+				</div>
+				<div class="info-title">
+					<p id="info-title-text">
+						Spelunky Procedural Generation
+					</p>
+				</div>
+				<div class="info-duration">
+					<p id="info-duration-text">
+						December 2022 - January 2023
+					</p>
+					
+				</div>
+
+				<div class="info-tags" >				
+					<img style="background-color: var(--csharp-color);" title="C#" src="assets/images/icons/csharp.svg">
+					<img style="background-color: var(--gamedev-color);" title="Game Development" src="assets/images/icons/gamedev.svg">
+					<img style="background-color: var(--visualstudio-color);" title="Visual Studio" src="assets/images/icons/vs.svg">
+					<img style="background-color: var(--unity-color);" title="Unity" src="assets/images/icons/unity.svg">
+				</div>
+
+				<div class="info-media">
+					<img src="./assets/images/media/Spelunky1.png" style="max-width: 45%;">
+					<img src="./assets/images/media/Spelunky2.png" style="max-width: 45%;">
+
+				</div>
+
+				<div class="info-description">
+					<p>
+					The goal of this project was the replication of the procedural level generation of the Spelunky game by Derek Yu. I chose to work on this project in order to get introduced to procedural generation techniques and to challenge myself to implement such a system on my own. <br>
+					The way in which this system works is by laying out rooms in a 4x4 level, ensuring a path from start to exit exists. Many of the rooms have modular pieces which add variety to the generation. Then, traps and treasure is generated based on predefined constraints and fixed probabilities. Finally, enemies are placed accordingly. <br>
+					Despite its simplicity, this system succeeds in generating new and interesting levels each time, indicating a solid original design.
+
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!--FIFA Mobile replica-->
+		<div class="info-window" id="fifa-mobile-info" style="visibility:hidden">
+			<div class="info-content">
+				<div class="info-window-close"
+				onclick="closeInfo();">
+					<img style= "width: inherit; height: inherit;" src="https://img.icons8.com/?size=100&id=9433&format=png&color=000000" />
+				</div>
+				<div class="info-title">
+					<p id="info-title-text">
+						FIFA Mobile Clone
+					</p>
+				</div>
+				<div class="info-duration">
+					<p id="info-duration-text">
+						June 2021 - August 2021
+					</p>
+					
+				</div>
+
+				<div class="info-tags" >				
+					<img style="background-color: var(--csharp-color);" title="C#" src="assets/images/icons/csharp.svg">
+					<img style="background-color: var(--gamedev-color);" title="Game Development" src="assets/images/icons/gamedev.svg">
+					<img style="background-color: var(--visualstudio-color);" title="Visual Studio" src="assets/images/icons/vs.svg">
+					<img style="background-color: var(--unity-color);" title="Unity" src="assets/images/icons/unity.svg">
+				</div>
+
+				<div class="info-media">
+					<iframe src="https://www.youtube.com/embed/QUy3EVaW9Tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+				</div>
+
+				<div class="info-description">
+					<p>
+					This was my first full project using the Unity Game Engine and the C# programming language. It is a simple replication of the FIFA Mobile game menu navigation and interaction. Making a clone of (part) of my favourite game at the time was very motivating and helped me get accostumed to both the Unity game engine and to programming an actual project (rather than small exercises). The hands-on experience was very helpful in solidifying my Object-Oriented Programming fundamentals, as well as forced me to consider project organisation and management.
+
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+
+
+		<!--Miscellaneous-->
+		<div class="info-window" id="miscellaneous-info" style="visibility:hidden">
+			<div class="info-content">
+				<div class="info-window-close"
+				onclick="closeInfo();">
+					<img style= "width: inherit; height: inherit;" src="https://img.icons8.com/?size=100&id=9433&format=png&color=000000" />
+				</div>
+
+				<!--Beat The Scles-->
+				<div class="info-title">
+					<p id="info-title-text">
+						Beat The Scales
+					</p>
+				</div>
+
+				<div class="info-duration">
+					<p id="info-duration-text">
+						August 2024
+					</p>
+					
+				</div>
+
+				<div class="info-tags" >
+					<img style="background-color: var(--csharp-color);" title="C#" src="assets/images/icons/csharp.svg">
+					<img style="background-color: var(--gamedev-color);" title="Game Development" src="assets/images/icons/gamedev.svg">
+					<img style="background-color: var(--visualstudio-color);" title="Visual Studio" src="assets/images/icons/vs.svg">
+					<img style="background-color: var(--unity-color);" title="Unity" src="assets/images/icons/unity.svg">
+				</div>
+				<div class="info-media">
+					<iframe class="itch-media" frameborder="0" src="https://itch.io/embed/2915085"><a href="https://juve938383.itch.io/beat-the-scales">Beat The Scales by juve938383</a></iframe>
+				</div>
+				<div class="info-description">
+					<p>
+					Simple game made in 3 days for the GMTK Game Jam 2024.
+					</p>
+				</div>
+
+
+				<!--Mechanic-A-Day-->
+				<div class="info-title">
+					<p id="info-title-text">
+						Mechanic-A-Day
+					</p>
+				</div>
+
+				<div class="info-duration">
+					<p id="info-duration-text">
+						February 2024
+					</p>
+					
+				</div>
+
+				<div class="info-tags" >
+					<img style="background-color: var(--csharp-color);" title="C#" src="assets/images/icons/csharp.svg">
+					<img style="background-color: var(--gamedev-color);" title="Game Development" src="assets/images/icons/gamedev.svg">
+					<img style="background-color: var(--visualstudio-color);" title="Visual Studio" src="assets/images/icons/vs.svg">
+					<img style="background-color: var(--unity-color);" title="Unity" src="assets/images/icons/unity.svg">
+				</div>
+				<div class="info-media">
+					<iframe src="https://www.youtube.com/embed/t3pRlAnN7_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				<div class="info-description">
+					<p>
+					A challenge to implement one game mechanic every day for a week. In the end, this turned out to be a good collection of programming exercises as I implemented some common game mechanics which I had not tried before, without any tutorial and in one day (in reality 2-4 hours). <br>
+					The mechanics are: Cards Drag & Drop, Topdown Shooter Controller, Dialogue System, Inventory System, Quest System and Enemy State Machine.
+
+					</p>
+				</div>
+
+
+
+				<!--Cryptocurrency Simulation-->
+				<div class="info-title">
+					<p id="info-title-text">
+						Cryptocurrency Simulation
+					</p>
+				</div>
+
+				<div class="info-duration">
+					<p id="info-duration-text">
+						May 2023 - June 2023
+					</p>
+					
+				</div>
+
+				<div class="info-tags" >
+					<img style="background-color: var(--java-color);" title="Java" src="assets/images/icons/java.svg">
+					<img style="background-color: var(--jetbrains-color);" title="Jet Brains" src="assets/images/icons/jetbrains.svg">				
+				</div>
+				<div class="info-media">
+					<iframe src="https://www.youtube.com/embed/r9oSzoL8otQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				<div class="info-description">
+					<p>
+					Project of the Programming 2 course. A multi-threaded, Java-based simulation of a blockchain network system, based on the Bitcoin whitepaper. <br>
+					This system consists of several user nodes and miner nodes. Each node has a balance and can add new transactions to the transaction queue. Miners, then, validate a set of transactions from the queue and create a new block which is added to the blockchain. Each miner works in parallel on a separate thread. A live visualisation of the system is available.
+
+					</p>
+				</div>
+
+
+
+				<!--Graviball-->
+				<div class="info-title">
+					<p id="info-title-text">
+						Graviball
+					</p>
+				</div>
+
+				<div class="info-duration">
+					<p id="info-duration-text">
+						June 2022 - August 2022
+					</p>
+					
+				</div>
+
+				<div class="info-tags" >
+					<img style="background-color: var(--csharp-color);" title="C#" src="assets/images/icons/csharp.svg">
+					<img style="background-color: var(--gamedev-color);" title="Game Development" src="assets/images/icons/gamedev.svg">
+					<img style="background-color: var(--visualstudio-color);" title="Visual Studio" src="assets/images/icons/vs.svg">
+					<img style="background-color: var(--unity-color);" title="Unity" src="assets/images/icons/unity.svg">	
+				</div>
+				<div class="info-media">
+					<iframe class="itch-media" frameborder="0" src="https://itch.io/embed/1655789"><a href="https://juve938383.itch.io/graviball">Graviball by juve938383</a></iframe>
+				</div>
+				<div class="info-description">
+					<p>
+					A simple platforming, gravity-manipulation game made in the Unity Game Engine and using the C# language.
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>	
+</html>
+
+
+<!--
+Tags
+
+<img style="background-color: var(--cpp-color);" title="C++" src="assets/images/icons/cpp.svg">
+
+<img style="background-color: var(--c-color);" title="C" src="assets/images/icons/c.svg">
+
+<img style="background-color: var(--csharp-color);" title="C#" src="assets/images/icons/csharp.svg">
+
+<img style="background-color: var(--python-color);" title="Python" src="assets/images/icons/python.svg">
+
+<img style="background-color: var(--rust-color);" title="Rust" src="assets/images/icons/rust.svg">
+
+<img style="background-color: var(--gamedev-color);" title="Game Development" src="assets/images/icons/gamedev.svg">
+
+<img style="background-color: var(--graphics-color);" title="Graphics" src="assets/images/icons/graphics.svg">
+
+<img style="background-color: var(--hpc-color);" title="HPC" src="assets/images/icons/hpc.svg">
+
+<img style="background-color: var(--visualstudio-color);" title="Visual Studio" src="assets/images/icons/vs.svg">
+
+<img style="background-color: var(--unity-color);" title="Unity" src="assets/images/icons/unity.svg">
+
+<img style="background-color: var(--jetbrains-color);" title="Jet Brains" src="assets/images/icons/jetbrains.svg">
+
+<img style="background-color: var(--bevy-color);" title="Bevy" src="assets/images/icons/bevy.svg">
+
+<img style="background-color: var(--java-color);" title="Java" src="assets/images/icons/java.svg">
+
+<img style="background-color: var(--javascript-color);" title="Java Script" src="assets/images/icons/js.svg">
+
+<img style="background-color: var(--webdev-color);" title="Web Development" src="assets/images/icons/webdev.svg">
+
+<img style="background-color: var(--github-color);" title="Github" src="assets/images/icons/github.svg">
+
+-->
