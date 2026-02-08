@@ -34,6 +34,11 @@
 }
 
 @media (orientation: landscape) {
+
+	:root{
+		color-scheme: only light;
+	}
+
 	body {
 		margin: 0px;
 	}
@@ -120,8 +125,6 @@
 		font-size: 6.66vh;
 		text-align: center;
 		margin: 0px;
-		padding-left: 6.66vh;
-		width: 93.33vh;
 		background: linear-gradient(130deg, #beb187, #a6803c);
 		-webkit-background-clip: text;
 		background-clip: text;
@@ -135,6 +138,7 @@
 
 	.learn-more-button-container {
   	margin-top: 0.83vh;
+  	margin-left: -6.66vh;
   	position: relative;
 		display: flex;
 		flex-direction: column;
@@ -439,6 +443,10 @@
 
 
 @media (orientation: portrait) {
+	:root{
+		color-scheme: only light;
+	}
+	
 	body {
 		margin: 0px;
 	}

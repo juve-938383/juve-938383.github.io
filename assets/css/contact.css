@@ -35,6 +35,10 @@
 
 
 @media (orientation: landscape) {
+	:root{
+		color-scheme: only light;
+	}
+	
 	body {
 		margin: 0px;
 	}
@@ -170,6 +174,10 @@
 
 
 @media (orientation: portrait) {
+:root{
+		color-scheme: only light;
+	}
+
 body {
 		margin: 0px;
 	}
