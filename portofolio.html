@@ -42,8 +42,26 @@
 		
 		<div id= "portofolio-container">
 			<p id="portofolio-title">Portofolio</p>
+
+			<p style="margin-top: 0; padding-bottom:2vh; color:white; font-size: 2vh; font-family: 'OpenSans';">* No form of generative AI has been used in the making of my projects. *</p>
+
 			<div id="tiles">
 				
+				<div class="tile" style="--tile_bg: url('../images/thumbnails/Vulkan.png'); --overlay_color: #0c1a5b;">
+					<div class="color-overlay"></div>
+					<p class="tile-title">Vulkan Renderer<br> [WIP]</p>
+				</div>
+
+				<div class="tile" style="--tile_bg: url('../images/thumbnails/Quantum.png'); --overlay_color: #0c1a5b;", onclick="openInfo('quantum-simulator-info')">
+					<div class="color-overlay"></div>
+					<p class="tile-title">Quantum Circuit<br> Simulator</p>
+				</div>
+
+				<div class="tile" style="--tile_bg: url('../images/thumbnails/RoboticArm.png'); --overlay_color: #0c1a5b;", onclick="openInfo('robotic-arm-info')">
+					<div class="color-overlay"></div>
+					<p class="tile-title">IK Animation</p>
+				</div>
+
 				<div class="tile" style="--tile_bg: url('../images/thumbnails/MSCCLPPMPI.png'); --overlay_color: #0c1a5b;", onclick="openInfo('mscclpp-mpi-info')">
 					<div class="color-overlay"></div>
 					<p class="tile-title">MSCCLPP-MPI</p>
@@ -120,6 +138,92 @@
 	<div id="floating-windows" style="visibility:hidden"><!--style="visibility:hidden"-->
 		<div id="dark-overlay" onclick="closeInfo();" style="visibility:hidden">
 		</div>
+
+		<!--Quantum-->
+		<div class="info-window" id="quantum-simulator-info" style="visibility:hidden">
+			<div class="info-content">
+				<div class="info-window-close"
+				onclick="closeInfo();">
+					<img style= "width: inherit; height: inherit;" src="https://img.icons8.com/?size=100&id=9433&format=png&color=000000" />
+				</div>
+				<div class="info-title">
+					<p id="info-title-text">
+						Quantum Circuit Simulator
+					</p>
+				</div>
+
+				<div class="info-duration">
+					<p id="info-duration-text">
+						June 2026
+					</p>
+					
+				</div>
+
+				<div class="info-tags" >
+					<img style="background-color: var(--c-color);" title="C" src="assets/images/icons/c.svg">
+					<img style="background-color: var(--visualstudio-color);" title="Visual Studio" src="assets/images/icons/vs.svg">
+					<img style="background-color: var(--github-color);" title="Github" src="assets/images/icons/github.svg">
+				</div>
+
+				<div class="info-media">
+					<a href="https://github.com/juve-938383/Quantum-Circuit-Simulator" target="_blank"><img src="./assets/images/media/Quantum.png"></a>
+					
+				</div>
+
+				<div class="info-description">
+					<p>
+						The aim of this project is the simulation of a custom quantum circuit given as input, outputting the resulting state vector of the circuit. It was written in C, which allows for optimization methods such as memory arenas which I used to avoid allocating large blocks of memory often and instead reusing existing allocated memory. It was an interesting project because through simple mathematical operations and a good understanding of quantum computing, I was able to simulate something so complex as quantum circuits. This project was made for the Advanced Architectures course in about a week.
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!--Robotic Arm-->
+		<div class="info-window" id="robotic-arm-info" style="visibility:hidden">
+			<div class="info-content">
+				<div class="info-window-close"
+				onclick="closeInfo();">
+					<img style= "width: inherit; height: inherit;" src="https://img.icons8.com/?size=100&id=9433&format=png&color=000000" />
+				</div>
+				<div class="info-title">
+					<p id="info-title-text">
+						Inverse Kinematics Animation
+					</p>
+				</div>
+
+				<div class="info-duration">
+					<p id="info-duration-text">
+						June 2026
+					</p>
+					
+				</div>
+
+				<div class="info-tags" >
+					<img style="background-color: var(--opengl-color);" title="OpenGL" src="assets/images/icons/opengl.svg">
+					<img style="background-color: var(--graphics-color);" title="Graphics" src="assets/images/icons/graphics.svg">
+					<img style="background-color: var(--visualstudio-color);" title="Visual Studio" src="assets/images/icons/vs.svg">
+					<img style="background-color: var(--github-color);" title="Github" src="assets/images/icons/github.svg">
+					<img style="background-color: var(--javascript-color);" title="Java Script" src="assets/images/icons/js.svg">
+					<img style="background-color: var(--webdev-color);" title="Web Development" src="assets/images/icons/webdev.svg">
+				</div>
+
+				<div class="info-media">
+					<iframe src="https://www.youtube-nocookie.com/embed/hYY4bZaceH0?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+				</div>
+
+				<div class="info-description">
+					<p>
+					For the project of Interactive Graphics, me and a colleague decided to make an animation of a robotic arm, sorting incoming objects of various physical properties. I chose to work on the arm because I had experimented with Inverse Kinematics on the plane previously and wanted to try the same in 3D.<br><br>
+					The Inverse Kinematics algorithm itself translates quite easily to 3D. However, the challenge turned out to be matching the movement of the physical arm to its logical bones and joints. It took a lot of consideration and experimentation with different transformation spaces and quite a bit of trigonometry but in the end the desired result was achieved. In addition, a state machine was created to enable the animation of the arm between different waypoints/states such as: picking up an object, lifting the arm up, approaching the target, dropping off the object etc.
+					</p>
+				</div>
+
+			</div>
+		</div>
+
 
 		<!--MSCCL-MPI-->
 		<div class="info-window" id="mscclpp-mpi-info" style="visibility:hidden">
@@ -467,7 +571,7 @@
 
 				<div class="info-description">
 					<p>
-					The goal of this project was the replication of the procedural level generation of the Spelunky game by Derek Yu. I chose to work on this project in order to get introduced to procedural generation techniques and to challenge myself to implement such a system on my own. <br>
+					The goal of this project was the replication of the procedural level generation of the Spelunky game by Derek Yu. I chose to work on this project in order to get introduced to procedural generation techniques and to challenge myself to implement such a system on my own. <br><br>
 					The way in which this system works is by laying out rooms in a 4x4 level, ensuring a path from start to exit exists. Many of the rooms have modular pieces which add variety to the generation. Then, traps and treasure is generated based on predefined constraints and fixed probabilities. Finally, enemies are placed accordingly. <br>
 					Despite its simplicity, this system succeeds in generating new and interesting levels each time, indicating a solid original design.
 
@@ -671,6 +775,10 @@ Tags
 <img style="background-color: var(--python-color);" title="Python" src="assets/images/icons/python.svg">
 
 <img style="background-color: var(--rust-color);" title="Rust" src="assets/images/icons/rust.svg">
+
+<img style="background-color: var(--vulkan-color);" title="Vulkan" src="assets/images/icons/vulkan.svg">
+
+<img style="background-color: var(--opengl-color);" title="OpenGL" src="assets/images/icons/opengl.svg">
 
 <img style="background-color: var(--gamedev-color);" title="Game Development" src="assets/images/icons/gamedev.svg">
 

@@ -128,6 +128,7 @@
 		color: white;
 		border-bottom: 0.37vh solid #B29962;
 		width: 31.66vh;
+		margin-bottom: 2vh;
 	}
 
 	#tiles{
@@ -539,6 +540,7 @@ transform: scale(1.4);
 		color: white;
 		border-bottom: 1vw solid #B29962;
 		width: 37vw;
+		margin-bottom: 2vh;
 	}
 
 	#tiles{

@@ -260,7 +260,7 @@
 .marquee-wrapper .marquee-content .card-testimonial {
   width: 32vh;
   border: solid #B29962 0.4vh;
-  border-radius: 0.7vh;
+  /*border-radius: 0.7vh;*/
   background-image: linear-gradient(160deg, #0d2254, #00040f);
 }
 
@@ -280,6 +280,13 @@
 }
 
 
+#vulkan-card img{
+	scale: 1.8;
+}
+
+#opengl-card img{
+	scale: 1.8;
+}
 
 .scrollingX {
  	animation: scroll-1 45s linear infinite;
@@ -672,7 +679,7 @@
 .marquee-wrapper .marquee-content .card-testimonial {
   width: 48vw;
   border: solid #B29962 0.6vw;
-  border-radius: 1vw;
+  /*border-radius: 1vw;*/
   background-image: linear-gradient(160deg, #0d2254, #00040f);
 }
 
@@ -691,7 +698,13 @@
   white-space: nowrap;
 }
 
+#vulkan-card img{
+	scale: 1.8;
+}
 
+#opengl-card img{
+	scale: 1.8;
+}
 
 .scrollingX {
  	animation: scroll-1 45s linear infinite;
